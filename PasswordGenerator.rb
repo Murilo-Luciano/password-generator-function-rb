@@ -18,14 +18,14 @@ class PasswordGenerator
         Range.new(1, length).each do |i|
             password << chars_possibilities[rand(chars_possibilities.count)].chr
         end
-        
+
         password.join
     end
 
     private
 
     def handle_options(options)
-        # char code
+        # char codes
         # 33 ... 126
         # 48 ... 57 -> number
         # 65 ... 90 -> uppercase alphabetic
